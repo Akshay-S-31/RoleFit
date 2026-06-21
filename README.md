@@ -1,7 +1,6 @@
 # RoleFit: AI-Powered Candidate Ranking Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 ![Tests](https://img.shields.io/badge/Tests-42%2F42_Passed-success.svg)
 
@@ -11,7 +10,7 @@ The pipeline is capable of searching through **100,000 candidates** and outputti
 
 ---
 
-## 🎯 Architecture & Methodology
+## Architecture 
 
 RoleFit uses a strict 4-stage funnel to narrow down the candidate pool precisely and efficiently, avoiding the overhead and hallucinations of LLMs.
 
@@ -39,7 +38,7 @@ A deterministic engine then generates a 1-2 sentence explanation of the score fo
 
 ---
 
-## 🚀 Setup & Execution
+##  Setup & Execution
 
 ### Prerequisites
 - Python 3.9+
@@ -70,7 +69,7 @@ python3 India_runs_data_and_ai_challenge/validate_submission.py output/submissio
 
 ---
 
-## 🎨 Streamlit UI Sandbox
+## Streamlit UI Sandbox
 
 RoleFit includes an interactive web sandbox where you can upload your own `candidates.jsonl` and view the ranking and reasoning via a clean UI.
 
@@ -82,7 +81,7 @@ python3 -m streamlit run app.py
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 The codebase includes an extensive suite of 42 Pytest unit and integration tests covering text processing, scorers, vector databases, rerankers, and the main pipeline.
 
