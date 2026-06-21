@@ -1,0 +1,72 @@
+# Redrob Hackathon — Submission Metadata Template
+#
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "RoleFit"  
+
+primary_contact:
+  name: "Akshay"
+  email: "akshay@example.com"   
+  phone: "+91-0000000000"        
+
+team_members:
+  - name: "Akshay"
+    email: "akshay@example.com"
+    role: "ML Engineer"          
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/akshay/RoleFit"
+
+sandbox_link: "https://streamlit.io/"
+
+reproduce_command: "python rank.py --candidates ./India_runs_data_and_ai_challenge/candidates.jsonl --out ./output/submission.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "MacBook Pro"                    
+  cpu_cores: 8                                  
+  ram_gb: 16                                    
+  python_version: "3.9"                      
+  os: "macOS"                              
+  uses_gpu_for_inference: false                 
+  has_network_during_ranking: false             
+  pre_computation_required: true               
+  pre_computation_time_minutes: 7               
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini"        
+
+ai_usage_summary: |
+  Used Gemini as an agentic coding assistant to design the pipeline architecture, 
+  implement the bi-encoder retrieval, cross-encoder re-ranking, and rule-based scoring systems. 
+  Gemini generated the python code, configuration, tests, and reasoning generation logic.
+
+# ============================================================================
+# Approach summary (optional but recommended)
+# ============================================================================
+methodology_summary: |
+  RoleFit is a 4-stage pipeline that ranks 100K candidates under 20s on CPU.
+  1. Bi-encoder retrieval (FAISS) fetches top-200 longlist in <0.1s.
+  2. Cross-encoder scores the 200 pairs jointly against JD requirements.
+  3. Rule-based scorer deterministically evaluates skill proficiency, career trajectory, behavioral availability, and detects honeypots.
+  4. Composite scoring combines CE (30%), Skills (20%), Career (25%), and Behavior (25%). Honeypots are zeroed out and excluded from the top-100.
+  5. Deterministic, template-based reasoning explains the strengths and weaknesses of each candidate without LLM inference overhead.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true        
+  code_is_original_work: true       
+  no_collusion: true                
+  honeypot_check_done: true        
+  reproduction_tested: true         

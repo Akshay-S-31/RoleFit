@@ -1,0 +1,23 @@
+# Ignore huge datasets (GitHub blocks >100MB)
+India_runs_data_and_ai_challenge/candidates.jsonl
+
+# Ignore generated output files and FAISS indices
+output/
+index.faiss
+embeddings_meta.pkl
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Streamlit
+.streamlit/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
