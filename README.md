@@ -12,6 +12,8 @@ The pipeline is capable of searching through **100,000 candidates** and outputti
 
 ## Architecture 
 
+![Candidate Scoring Pipeline](Candidate%20Scoring%20Pipeline.png)
+
 RoleFit uses a strict 4-stage funnel to narrow down the candidate pool precisely and efficiently, avoiding the overhead and hallucinations of LLMs.
 
 ### 1. Bi-Encoder Retrieval (FAISS)
@@ -38,7 +40,7 @@ A deterministic engine then generates a 1-2 sentence explanation of the score fo
 
 ---
 
-##  Setup & Execution
+## Setup & Execution
 
 ### Prerequisites
 - Python 3.9+
@@ -81,7 +83,7 @@ python3 -m streamlit run app.py
 
 ---
 
-##  Testing
+## Testing
 
 The codebase includes an extensive suite of 42 Pytest unit and integration tests covering text processing, scorers, vector databases, rerankers, and the main pipeline.
 
