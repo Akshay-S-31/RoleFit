@@ -5,7 +5,6 @@ import os
 import time
 from pathlib import Path
 
-# Important: these must be imported after page config
 from src.pipeline import RecruiterPipeline
 from config import FAISS_INDEX_PATH, EMBEDDINGS_META_PATH
 
@@ -70,7 +69,7 @@ if uploaded_file is not None:
                     # Provide download link
                     with open(out_csv, "rb") as file:
                         btn = st.download_button(
-                            label="📥 Download Submission CSV",
+                            label="📥 Download  CSV",
                             data=file,
                             file_name="submission.csv",
                             mime="text/csv"

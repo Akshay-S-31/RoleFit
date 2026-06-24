@@ -10,7 +10,7 @@ The pipeline is capable of searching through **100,000 candidates** and outputti
 
 ---
 
-## Architecture 
+## 🎯 Architecture & Methodology
 
 ![Candidate Scoring Pipeline](Candidate%20Scoring%20Pipeline.png)
 
@@ -71,7 +71,7 @@ python3 India_runs_data_and_ai_challenge/validate_submission.py output/submissio
 
 ---
 
-## Streamlit UI Sandbox
+## 🎨 Streamlit UI Sandbox
 
 RoleFit includes an interactive web sandbox where you can upload your own `candidates.jsonl` and view the ranking and reasoning via a clean UI.
 
