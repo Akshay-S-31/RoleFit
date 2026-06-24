@@ -1,8 +1,7 @@
 # RoleFit: AI-Powered Candidate Ranking Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
-![Tests](https://img.shields.io/badge/Tests-42%2F42_Passed-success.svg)
+
 
 RoleFit is a high-performance, precision AI recruiting pipeline built for the **Redrob Data & AI Challenge**. It evaluates and ranks candidates against a Job Description (JD) using a multi-stage approach of embeddings, cross-encoder re-ranking, and rule-based behavioral scoring.
 
@@ -10,7 +9,7 @@ The pipeline is capable of searching through **100,000 candidates** and outputti
 
 ---
 
-## 🎯 Architecture & Methodology
+## Architecture 
 
 ![Candidate Scoring Pipeline](Candidate%20Scoring%20Pipeline.png)
 
@@ -71,7 +70,7 @@ python3 India_runs_data_and_ai_challenge/validate_submission.py output/submissio
 
 ---
 
-## 🎨 Streamlit UI Sandbox
+## Streamlit UI Sandbox
 
 RoleFit includes an interactive web sandbox where you can upload your own `candidates.jsonl` and view the ranking and reasoning via a clean UI.
 
