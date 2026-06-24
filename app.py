@@ -20,7 +20,7 @@ Upload a `candidates.jsonl` file to rank them against the Senior AI/ML Engineer 
 *Note: This sandbox runs the exact same pipeline used for the 100K challenge, but uses a pre-computed FAISS index. Please ensure the uploaded candidates were part of the pre-computation.*
 """)
 
-# Setup pipeline (cached so we don't reload models on every UI interaction)
+#Setup pipeline (cached so we don't reload models on every UI interaction)
 @st.cache_resource
 def load_pipeline():
     with st.spinner("Loading AI Models (Bi-encoder, Cross-encoder)..."):
